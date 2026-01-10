@@ -4,10 +4,12 @@ let topiclist = ["insurance", "savings", "food", "rent", "utilities", "transport
 let objectList = [];
 let taxList = ["income tax", "federal tax", "property tax", "social security", "medicare", "insurances"];
 
+let closed = true;
 let page = 0;
 let taxes = 0;
 let totalSpendings = 0;
 let totalMoney = 0;
+const bottomBar = document.getElementById("bottom-bar");
 const chartContainer = document.getElementById("chartContainer");
 const canvasContainer = document.getElementById("canvasContainer");
 const totalContainer = document.getElementById("totalContainer");
@@ -16,6 +18,9 @@ const moneyLeftEl = document.getElementById("money-left-el");
 const salarySelect = document.getElementById("salarySelect");
 const moneyMadeInput = document.getElementById("MoneyMade");
 const hoursInput = document.getElementById("Hours")
+const page1 = document.getElementById("page1");
+const page2 = document.getElementById("page2");
+const moneyLeftContainer = document.getElementById("moneyLeftContainer");
 
 const incomeTax = document.getElementById("IncomeTax");
 const federalTax = document.getElementById("FederalTax");
@@ -25,6 +30,11 @@ const medicare = document.getElementById("Medicare");
 const insurance = document.getElementById("Insurance");
 
 const taxArray = [incomeTax, federalTax, propertyTax, socialSecurity, medicare, insurance];
+
+page2.style.display = "none";
+page1.style.display = "none";
+chartContainer.style.display = "none";
+moneyLeftContainer.style.display = "none";
 
 // Bar colors
 const barColors = [
@@ -154,34 +164,17 @@ function resetAll(){
     resetChart();
 }
 
-function pageBack(){
-    page--;
-    if(page < 0){
-        page = 2;
-    }
-    updatePage();
-}
 
-function pageNext(){
-    page++;
-    if(page > 2){
-        page = 0;
-    }
-    updatePage();
-}
+
+// pages:
 
 function updatePage(){
-    if(page == 0){
-        totalContainer.style.display = "block";
-        canvasContainer.style.display = "none";
-        chartContainer.style.display = "none";
-    } else if (page == 1){
+
+     if (page == 1){
         totalContainer.style.display = "none";
-        canvasContainer.style.display = "none";
         chartContainer.style.display = "block";
     } else if (page == 2){
         totalContainer.style.display = "none";
-        canvasContainer.style.display = "block";
         chartContainer.style.display = "none";
     }
 }
@@ -270,4 +263,38 @@ function showMoney(){
     }
 
     calculateMoneyLeft();
+}
+function toggleBottomBar(){
+    if(closed){
+
+        bottomBar.style.transition = "height 1s ease";
+        bottomBar.style.height = "1vw";
+        canvasContainer.style.transition = "height 1s ease, width 1s ease";
+        canvasContainer.style.height = "40vw", canvasContainer.style.width = "40vw";
+        closed = !closed;
+    } else if (!closed && page === 1 || !closed && page == 2){
+        bottomBar.style.transition = "height 1s ease";
+        bottomBar.style.height = "21vw";
+    canvasContainer.style.transition = "height 1s ease, width 1s ease";
+        canvasContainer.style.height = "18vw", canvasContainer.style.width = "18vw";
+        closed = !closed;
+    }
+}
+
+function goToPage(pageNumber){
+    if(page == pageNumber){
+        toggleBottomBar();
+    } else {
+    
+        page = pageNumber;
+        if(page == 1){
+            page1.style.display = "block";
+            page2.style.display = "none";
+            chartContainer.style.display = "none";
+        } else if (page == 2){
+            page1.style.display = "none";
+            page2.style.display = "block";
+            chartContainer.style.display = "block";
+        }
+    }
 }

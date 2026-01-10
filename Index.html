@@ -31,18 +31,21 @@
 <br>
 
 
-<div id="chartContainer">
+
+ <div id="bottom-bar">  
+    <button class="page1" onclick="goToPage(1)"> Money Made </button>
+    <button class="page2" onclick="goToPage(2)"> Money Spent </button>
 
 
 
 
 
-<br>
-<br>
+
 <!-- Page 2 -->
 
 
-    <div id="tableContainer" onchange="showMoney(topicArray)">
+    <div id="page2" onchange="showMoney(topicArray)">
+        <div id="chartContainer">
 <table id= table>
     <tr>
         <th> Money Spent </th>
@@ -118,6 +121,7 @@
 </html>
 
 <!-- Page 1 -->
+
 <div id = "page1" onchange="showMoney(taxArray)">
 
 
@@ -154,10 +158,6 @@
         <h4> <input id = "Insurance" type = "text" placeholder = "Insurances" name="taxesText" class="page1Input" rows="1" cols="50"> </h4>
     </div>
 </div>
-
 </div>
-    <div id="pageButtons">   
-        <br>
-    <button id="Back" class="button" onclick="pageBack()">Back</button>
-    <button  id = "Next" class="button" onclick="pageNext()">Next</button>
-    </div>
+</div>
+</div>
