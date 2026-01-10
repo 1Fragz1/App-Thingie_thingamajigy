@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../VS Code/CoolerAwsomerWebsiter"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Tutorial",
+		"liveServer.settings.port": 5501
+	}
+}
