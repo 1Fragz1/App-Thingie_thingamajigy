@@ -1,0 +1,55 @@
+#moneyLeftContainer {
+    width: 20vw; 
+    border: .1vw solid #79fd79; 
+    background-color:  #121212; 
+    color: #79fd79; 
+    font-weight: bold; 
+    font-family: cursive; 
+    border-radius: 3vw;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 100%;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
+}
+
+#Hours {
+    width: 2vw;
+    border: #79fd79 0.1vw solid;
+    background-color:  #121212; 
+    color: #79fd79; 
+    font-weight: bold; 
+    font-family: cursive; 
+    margin: 2vw;    
+    font-size: 1vw;
+    margin: auto;
+
+}
+
+#totalContainer {
+    border:0.1vw solid #79fd79; 
+    background-color: #121212;
+    color: #79fd79; 
+    font-family: cursive; 
+    font-weight: bold; 
+    border-radius: 1vw; 
+    font-size: 100%;
+    bottom: 90%;
+    margin: auto;
+    height: 15%;
+    width: 50%;
+    font-size: 1vw;
+    padding-bottom: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 10px;
+    display: flex;
+    flex-flow: column;
+}
