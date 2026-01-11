@@ -8,9 +8,12 @@ function toggleBottomBar(){
         closed = !closed;
     } else if (!closed && page === 1 || !closed && page == 2){
         bottomBar.style.transition = "height 1s ease";
-        bottomBar.style.height = "21vw";
-    canvasContainer.style.transition = "height 1s ease, width 1s ease";
+        bottomBar.style.height = "21vw", page1.style.height = "15vw", page2.style.height = "15vw"; ;
+        canvasContainer.style.transition = "height 1s ease, width 1s ease";
         canvasContainer.style.height = "18vw", canvasContainer.style.width = "18vw";
+        
+        
+        
         closed = !closed;
     }
 }

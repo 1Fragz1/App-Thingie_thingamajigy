@@ -36,7 +36,8 @@ page1.style.display = "none";
 chartContainer.style.display = "none";
 moneyLeftContainer.style.display = "none";
 
-
+const moneyMadeBtn = document.getElementById("Money-Made-btn");
+const moneySpentBtn = document.getElementById("Money-Spent-btn");
 
 
 

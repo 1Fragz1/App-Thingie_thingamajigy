@@ -105,6 +105,7 @@ hr {
     width: 80%;
     font-size: 1vw;
     padding-bottom: 10px;
+    overflow: auto;
 }
 #page2 {
     border:0.1vw solid #79fd79; 
@@ -120,6 +121,7 @@ hr {
     width: 80%;
     font-size: 1vw;
     padding-bottom: 10px;
+    overflow: auto;
 }
 
 .tabletext {
@@ -163,4 +165,25 @@ hr {
     justify-content: space-around;
     border-radius: 1vw;
     
+}
+
+#Money-Made-btn, #Money-Spent-btn {
+    background-color: #79fd79; 
+    color: #42ac42; 
+    font-weight: bold; 
+    font-family: cursive; 
+    border-radius: 1vw; 
+    border: .5vw solid #65e065; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    position: sticky;
+    top: -5vh;
+    transition: transform 1s ease;
+    width: 15%;
+    height: 4vw;
+    font-size: 1.5vw;
+   text-shadow: #060606 .05vw .05vw .05vw;
+   margin-top: -5vw;
+   justify-self: space-between;
+   align-self: space-between;
 }
