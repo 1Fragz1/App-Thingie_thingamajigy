@@ -5,15 +5,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-y: scroll;
     background-color: #A77244;
-    padding-bottom: 20vh;
     border: .3vw solid #4D2B0D;
+    padding-bottom: 1vw;
+
 }
 
  #table {
-    width: 70%;
-    height: auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +21,8 @@
     margin-top: 10vh;
     border: 5px solid #4D2B0D;
     border-radius: 10vh;
-    background-color: #A77244;;
+    background-color: #D99961;
+    
 
 }
 
