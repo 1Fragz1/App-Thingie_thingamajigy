@@ -10,22 +10,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Page</title>
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="JS-CSS/Style.css">
-    <link rel="stylesheet" href="JS-CSS/Pages/Pages.css">
-    <link rel="stylesheet" href="JS-CSS/Money-Spent&Made/Money-Made.css">
-    <link rel="stylesheet" href="JS-CSS/Money-Spent&Made/Money-Spent.css">
-    <link rel="stylesheet" href="JS-CSS/Chart/Chart.css">
-    <link rel="stylesheet" href="JS-CSS/Goals/Goals.css">
-    <link rel="stylesheet" href="JS-CSS/Progress/Progress.css">
-    <!-- JS Files -->
-    <script src="JS-CSS/Script.js" defer></script>
-    <script src="JS-CSS/Pages/Pages.js" defer></script>
-    <script src="JS-CSS/Money-Spent&Made/Money-Made.js" defer></script>
-    <script src="JS-CSS/Money-Spent&Made/Money-Spent.js" defer></script>
-    <script src="JS-CSS/Chart/Chart.js" defer></script>
-    <script src="JS-CSS/Goals/Goals.js" defer></script>
-    <script src="JS-CSS/Progress/Progress.js" defer></script>
+    
+    
+            <!-- CSS Files -->
+        <link rel="stylesheet" href="JS-CSS/Style.css">
+        <link rel="stylesheet" href="JS-CSS/Pages/Pages.css">
+        <link rel="stylesheet" href="JS-CSS/Money-Spent&Made/Money-Made.css">
+        <link rel="stylesheet" href="JS-CSS/Money-Spent&Made/Money-Spent.css">
+        <link rel="stylesheet" href="JS-CSS/Chart/Chart.css">
+        <link rel="stylesheet" href="JS-CSS/Goals/Goals.css">
+        <link rel="stylesheet" href="JS-CSS/Progress/Progress.css">
+        <!-- JS Files -->
+        <script src="JS-CSS/Script.js" defer></script>
+        <script src="JS-CSS/Pages/Pages.js" defer></script>
+        <script src="JS-CSS/Money-Spent&Made/Money-Made.js" defer></script>
+        <script src="JS-CSS/Money-Spent&Made/Money-Spent.js" defer></script>
+        <script src="JS-CSS/Chart/Chart.js" defer></script>
+        <script src="JS-CSS/Goals/Goals.js" defer></script>
+        <script src="JS-CSS/Progress/Progress.js" defer></script>
+
 </head>
 <body>
     <h1 class ="title">
@@ -48,8 +51,8 @@
 
 
  <div id="bottom-bar">  
-    <button id="Money-Made-btn" onclick="goToPage(1)"> Money Made </button>
-    <button id="Money-Spent-btn" onclick="goToPage(2)"> Money Spent </button>
+    <button class="page1" onclick="goToPage(1)"> Money Made </button>
+    <button class="page2" onclick="goToPage(2)"> Money Spent </button>
 
 
 
@@ -60,7 +63,7 @@
 
 
     <div id="page2" onchange="showMoney(topicArray)">
-        <div id="chartContainer">
+        <div id="chart-container">
 <table id= table>
     <tr>
         <th> Money Spent </th>
@@ -68,56 +71,56 @@
    <div class="table">    
     </tr>
 
-        <td class = table > <input id = "savingsValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50" > </td>
+        <td class = table > <input id = "savingsValue" type = "text" name="table-text" class="table-text" rows="1" cols="50" > </td>
         <td class = "Topic" id = "Savings"> Savings </td>
     </tr>
 
     <tr>    
-        <td class = table > <input id = "foodValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50" >
+        <td class = table > <input id = "foodValue" type = "text" name="table-text" class="table-text" rows="1" cols="50" >
         <td class = "Topic" id = "Food"> Food </td>
     </tr>
         <tr>    
-        <td class = table > <input id = "rentValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50" >
+        <td class = table > <input id = "rentValue" type = "text" name="table-text" class="table-text" rows="1" cols="50" >
         <td class = "Topic" id = "Rent"> Rent </td>
     </tr>
     <tr>
-        <td class = table > <input id = "utilitiesValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50" >
+        <td class = table > <input id = "utilitiesValue" type = "text" name="table-text" class="table-text" rows="1" cols="50" >
         <td class = "Topic" id = "Utilities"> Utilities </td>
     </tr>
     <tr>
-        <td class = table > <input id = "transportationValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50" >
+        <td class = table > <input id = "transportationValue" type = "text" name="table-text" class="table-text" rows="1" cols="50" >
         <td class = "Topic" id = "Transportation"> Transportation </td>
     </tr>
     <tr>
-        <td class = table > <input id = "entertainmentValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50" >
+        <td class = table > <input id = "entertainmentValue" type = "text" name="table-text" class="table-text" rows="1" cols="50" >
         <td class = "Topic" id = "Entertainment"> Entertainment </td>
     </tr>
     <tr>
-        <td class = table > <input id = "clothingValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50" >
+        <td class = table > <input id = "clothingValue" type = "text" name="table-text" class="table-text" rows="1" cols="50" >
         <td class = "Topic" id = "Clothing"> Clothing </td>
     </tr>
     <tr>
-        <td class = table > <input id = "healthcareValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50">
+        <td class = table > <input id = "healthcareValue" type = "text" name="table-text" class="table-text" rows="1" cols="50">
         <td class = "Topic"id ="Healthcare"> Healthcare </td>
     </tr>
     <tr>
-        <td class = table > <input id = "educationValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50">
+        <td class = table > <input id = "educationValue" type = "text" name="table-text" class="table-text" rows="1" cols="50">
         <td class = "Topic"id ="Education"> Education </td>
     </tr>
     <tr>
-        <td class = table > <input id = "personalCareValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50">
+        <td class = table > <input id = "personalCareValue" type = "text" name="table-text" class="table-text" rows="1" cols="50">
         <td class = "Topic"id ="Personal Care"> Personal Care </td>
     </tr>
     <tr>
-        <td class = table > <input id = "giftsValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50">
+        <td class = table > <input id = "giftsValue" type = "text" name="table-text" class="table-text" rows="1" cols="50">
         <td class = "Topic"id ="Gifts"> Gifts </td>
     </tr>
     <tr>
-        <td class = table > <input id = "donationsValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50">
+        <td class = table > <input id = "donationsValue" type = "text" name="table-text" class="table-text" rows="1" cols="50">
         <td class = "Topic"id ="Donations"> Donations </td>
     </tr>
     <tr>
-        <td class = table > <input id = "miscellaneousValue" type = "text" name="tabletext" class="tabletext" rows="1" cols="50">
+        <td class = table > <input id = "miscellaneousValue" type = "text" name="table-text" class="table-text" rows="1" cols="50">
         <td class = "Topic"id ="Miscellaneous"> Miscellaneous </td>
     </tr>
     </div>
@@ -131,8 +134,7 @@
 </div>
 
 
-
-    
+    <script src="Script.js" defer></script>
 </body>
 </html>
 
@@ -141,37 +143,36 @@
 <div id = "page1" onchange="showMoney(taxArray)">
 
 
-<div id="totalContainer"> 
+<div id="total-container"> 
 <h2> Total Money Made:  (Monthly)</h2>    
     <h2 id="total-money-el"> $ </h2>
 <hr>
 <h2> 
     Payment Type:
-    <select name = "salaryType" id = "salarySelect" style="margin-right: 10px;" onchange="showHourlyInput()"> 
+    <select name = "salaryType" id = "salarySelect" style="margin-right: 10px;" onchange="showHourlyInput()" class="page-1-input"> 
     <option value="hourly">Hourly</option>
     <option value="weekly">Weekly</option>
     <option value="monthly">Monthly</option>
     <option value="yearly">Yearly</option> 
-    <input id = "Hours" type = "text" placeholder = "00" name="NumberOfHours" class="page1Input" rows="1" cols="50">
+    <input id = "Hours" type = "text" placeholder = "00" name="NumberOfHours" class="page-1-input" rows="1" cols="50">
 </select> 
     <br>
-    <input id = "MoneyMade" type = "text" placeholder = "Enter amount" name="moneyMadeText" class="page1Input" rows="1" cols="50">
+    <input id = "MoneyMade" type = "text" placeholder = "Enter amount" name="moneyMadeText" class="page-1-input" rows="1" cols="50">
 </h2>
 
 <hr>
 <h2> Taxes: </h2>
-<div id="taxesContainer">   
-        <h4> <input id = "IncomeTax" type = "text" placeholder = "Income Tax" name="taxesText" class="page1Input" rows="1" cols="50"> </h4>
+<div id="taxes-container">   
+        <h4> <input id = "IncomeTax" type = "text" placeholder = "Income Tax" name="taxesText" class="page-1-input" rows="1" cols="50"> </h4>
 
-        <h4> <input id = "FederalTax" type = "text" placeholder = "Federal Tax" name="taxesText" class="page1Input" rows="1" cols="50"> </h4>
+        <h4> <input id = "FederalTax" type = "text" placeholder = "Federal Tax" name="taxesText" class="page-1-input" rows="1" cols="50"> </h4>
 
-        <h4> <input id = "PropertyTax" type = "text" placeholder = "Property Tax" name="taxesText" class="page1Input" rows="1" cols="50"> </h4>
+        <h4> <input id = "PropertyTax" type = "text" placeholder = "Property Tax" name="taxesText" class="page-1-input" rows="1" cols="50"> </h4>
+        <h4> <input id = "SocialSecurity" type = "text" placeholder = "Social Security" name="taxesText" class="page-1-input" rows="1" cols="50"> </h4>
 
-        <h4> <input id = "SocialSecurity" type = "text" placeholder = "Social Security" name="taxesText" class="page1Input" rows="1" cols="50"> </h4>
+        <h4> <input id = "Medicare" type = "text" placeholder = "Medicare" name="taxesText" class="page-1-input" rows="1" cols="50"> </h4>
 
-        <h4> <input id = "Medicare" type = "text" placeholder = "Medicare" name="taxesText" class="page1Input" rows="1" cols="50"> </h4>
-
-        <h4> <input id = "Insurance" type = "text" placeholder = "Insurances" name="taxesText" class="page1Input" rows="1" cols="50"> </h4>
+        <h4> <input id = "Insurance" type = "text" placeholder = "Insurances" name="taxesText" class="page-1-input" rows="1" cols="50"> </h4>
     </div>
 </div>
 </div>

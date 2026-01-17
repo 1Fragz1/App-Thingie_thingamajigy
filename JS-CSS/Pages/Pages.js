@@ -2,7 +2,7 @@ function toggleBottomBar(){
     if(closed){
 
         bottomBar.style.transition = "height 1s ease";
-        bottomBar.style.height = "1vw";
+        bottomBar.style.height = "100%";
         canvasContainer.style.transition = "height 1s ease, width 1s ease";
         canvasContainer.style.height = "40vw", canvasContainer.style.width = "40vw";
         closed = !closed;

@@ -1,189 +1,33 @@
-body {
-    background-color: #060606;
-    color: #79fd79; 
-    text-align: center;
-    font-family: cursive;
-    
-}
-
-.title {
-    font-size: 3vw; 
-    font-family: cursive;
-    font-weight: bolder; 
-    margin-top: 2%; 
-    margin-bottom: 2%;
-    background-color: #121212;
-    width: 50%;
-    margin-left: 25%;
-    border: 5px solid #79fd79;
-    border-radius: 10vw;
-}
-
-
-.Topic {
-    border-top: #79fd79 0.1vw solid;
-}
-
-
-
-td {
-    padding: .1vw;
-    
-   
-}
-
-.button {
-    background-color: #79fd79; 
-    color: #42ac42; 
-    font-weight: bold; 
-    font-family: cursive; 
-    border-radius: 1vw; 
-    border: .5vw solid #65e065; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    margin: 2%;
-    width: 25%;
-    height: 5%;
-    font-size: 2vw;
-   text-shadow: #060606 .05vw .05vw .05vw;
-}
-
-hr {
-    border: 0.1vw solid #79fd79;
-    width: 80%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-
-
-
-
-
-
 #bottom-bar {
-    width: 100%; 
-    height: 1vw; 
-    background-color: #121212; 
-    border-top: .2vw solid #79fd79; 
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     font-size: 1.5vw;
-    color: #79fd79;
-    font-family: cursive;
-    font-weight: bold;
-    transition: height 1s Ease;
+
 }
 
-.page1Input {
-    width: 20vw;
-    border: #79fd79 0.1vw solid;
-    background-color:  #121212; 
-    color: #79fd79; 
-    font-weight: bold; 
-    font-family: cursive; 
-    margin: 2%;    
-    font-size: 1vw;
-    margin: auto;
-}
-
-#page1 {
-    border:0.1vw solid #79fd79; 
-    background-color: #121212;
-    color: #79fd79; 
-    font-family: cursive; 
-    font-weight: bold; 
-    border-radius: 1vw; 
-    font-size: 100%;
-    bottom: 90%;
-    margin: auto;
-    height: 30%;
-    width: 80%;
-    font-size: 1vw;
-    padding-bottom: 10px;
-    overflow: auto;
-}
-#page2 {
-    border:0.1vw solid #79fd79; 
-    background-color: #121212;
-    color: #79fd79; 
-    font-family: cursive; 
-    font-weight: bold; 
-    border-radius: 1vw; 
-    font-size: 100%;
-    bottom: 90%;
-    margin: auto;
-    height: 30%;
-    width: 80%;
-    font-size: 1vw;
-    padding-bottom: 10px;
-    overflow: auto;
-}
-
-.tabletext {
-    width: 30vw;
-    border: #79fd79 0.1vw solid;
-    background-color:  #121212; 
-    color: #79fd79; 
-    font-weight: bold; 
-    font-family: cursive; 
-    margin: 2%;    
-    font-size: 1vw;
-    margin: auto;
-}
-
-#table {
-    border:0.1vw solid #79fd79; 
-    background-color: #121212;
-    color: #79fd79; 
-    font-family: cursive; 
-    font-weight: bold; 
-    border-radius: 1vw; 
-    font-size: 100%;
-    bottom: 90%;
-    margin: auto;
-    height: 30%;
-    width: 80%;
-    font-size: 1vw;
-}
-
-.table {
-    display: flex;
-    width: 80%; 
-    height: 5%; 
-    background-color:  #121212; 
-    color: #79fd79; 
-    font-weight: bold; 
-    font-family: cursive; 
-    margin: 2%;    
-    font-size: 1vw;
-    margin: auto;
-    justify-content: space-around;
+.page1, .page2 {
+    width: 10%;
+    height: 2.5vw;
+    background-color: #2dabb9;
+    color: white;
+    font-size: 1.5vw;
+    border: .3vw solid rgb(30, 74, 168);
+    cursor: pointer;
     border-radius: 1vw;
-    
+    position: relative;
+    top: 0%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+
 }
 
-#Money-Made-btn, #Money-Spent-btn {
-    background-color: #79fd79; 
-    color: #42ac42; 
-    font-weight: bold; 
-    font-family: cursive; 
-    border-radius: 1vw; 
-    border: .5vw solid #65e065; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    position: sticky;
-    top: -5vh;
-    transition: transform 1s ease;
-    width: 15%;
-    height: 4vw;
-    font-size: 1.5vw;
-   text-shadow: #060606 .05vw .05vw .05vw;
-   margin-top: -5vw;
-   justify-self: space-between;
-   align-self: space-between;
+.page2 {
+    border: .3vw solid #4D2B0D;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #A77244;
+    border-bottom: none;
 }

@@ -1,0 +1,48 @@
+#page1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    background-color: #2dabb9;
+    padding-bottom: 20vh;
+    border: .3vw solid rgb(30, 74, 168);
+}
+
+#total-container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10vh;
+    border: 5px solid rgb(30, 74, 168);
+    border-radius: 10vh;
+    background-color: #8BD2EB;
+
+}
+
+#taxes-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.page-1-input {
+    width: 100%;
+    height: auto;
+    font-size: 1.5vw;
+    margin: 1vh;
+    padding: 2vh;
+    border: .25vw solid rgb(30, 74, 168);
+    border-radius: 2vh;
+
+}

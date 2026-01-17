@@ -1,0 +1,9 @@
+body {
+    font-family: cursive, sans-serif;
+    background-image: url('Background.png');
+    background-size: 100% 50vw;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+}

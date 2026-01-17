@@ -74,7 +74,7 @@ let chart = new Chart(canvas, {
 function updateChart(){
     totalSpendings = 0;
     //const nameValue = nameInput.value;
-    const entries = document.getElementsByName("tabletext");
+    const entries = document.getElementsByName("table-text");
     resetChart();
 
     //ADD NEW MONEY
